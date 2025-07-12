@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS - Digital Innovation Studio</title>
+    <meta name="description" content="Award-winning digital innovation studio creating extraordinary experiences through cutting-edge design and technology.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">NEXUS</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">We Create</span>
+                    <span class="title-line gradient-text">Digital Magic</span>
+                    <span class="title-line">That Inspires</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Award-winning digital innovation studio crafting extraordinary experiences 
+                    through cutting-edge design, immersive technology, and strategic thinking.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('portfolio')">
+                        <span>View Our Work</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <span>Start a Project</span>
+                        <i data-lucide="sparkles"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Creative Design</h3>
+                        <p>Pixel-perfect interfaces</p>
+                    </div>
+                </div>
+                
+                <div class="floating-card card-2">
+                    <div class="card-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Development</h3>
+                        <p>Cutting-edge technology</p>
+                    </div>
+                </div>
+                
+                <div class="floating-card card-3">
+                    <div class="card-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Growth</h3>
+                        <p>Measurable results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">
+                    Pushing Boundaries of 
+                    <span class="gradient-text">Digital Innovation</span>
+                </h2>
+                <p class="section-subtitle">
+                    We're a collective of designers, developers, and strategists who believe 
+                    in the power of exceptional digital experiences to transform businesses.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-stats">
+                    <div class="stat-item" data-count="150">
+                        <div class="stat-number">0+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item" data-count="50">
+                        <div class="stat-number">0+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item" data-count="5">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item" data-count="25">
+                        <div class="stat-number">0+</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Founded in 2019, NEXUS has been at the forefront of digital innovation, 
+                            creating award-winning experiences for brands across the globe. Our 
+                            multidisciplinary approach combines strategic thinking with creative 
+                            excellence and technical mastery.
+                        </p>
+                        <p>
+                            We don't just build websites and apps – we craft digital ecosystems 
+                            that drive engagement, conversion, and growth. Every project is an 
+                            opportunity to push boundaries and set new standards.
+                        </p>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i data-lucide="award"></i>
+                            <span>Award-Winning Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="zap"></i>
+                            <span>Lightning-Fast Performance</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="shield-check"></i>
+                            <span>Enterprise-Grade Security</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="users"></i>
+                            <span>User-Centric Approach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">
+                    Comprehensive Digital 
+                    <span class="gradient-text">Solutions</span>
+                </h2>
+                <p class="section-subtitle">
+                    From concept to launch, we provide end-to-end digital services 
+                    that drive results and exceed expectations.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">
+                        Crafting intuitive and visually stunning interfaces that 
+                        delight users and drive conversions.
+                    </p>
+                    <ul class="service-features">
+                        <li>User Research & Testing</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Visual Design Systems</li>
+                        <li>Interaction Design</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Building high-performance, scalable web applications 
+                        using cutting-edge technologies.
+                    </p>
+                    <ul class="service-features">
+                        <li>Frontend Development</li>
+                        <li>Backend Architecture</li>
+                        <li>API Integration</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="smartphone"></i>
+                    </div>
+                    <h3 class="service-title">Mobile Apps</h3>
+                    <p class="service-description">
+                        Creating native and cross-platform mobile experiences 
+                        that engage users on any device.
+                    </p>
+                    <ul class="service-features">
+                        <li>iOS & Android Development</li>
+                        <li>Cross-Platform Solutions</li>
+                        <li>App Store Optimization</li>
+                        <li>Mobile-First Design</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="service-title">Digital Strategy</h3>
+                    <p class="service-description">
+                        Developing comprehensive digital strategies that align 
+                        with your business goals and market opportunities.
+                    </p>
+                    <ul class="service-features">
+                        <li>Market Analysis</li>
+                        <li>Competitive Research</li>
+                        <li>Growth Planning</li>
+                        <li>Performance Metrics</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3 class="service-title">SEO & Marketing</h3>
+                    <p class="service-description">
+                        Boosting your online visibility and driving qualified 
+                        traffic through strategic SEO and marketing.
+                    </p>
+                    <ul class="service-features">
+                        <li>Search Engine Optimization</li>
+                        <li>Content Marketing</li>
+                        <li>Social Media Strategy</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="headphones"></i>
+                    </div>
+                    <h3 class="service-title">Support & Maintenance</h3>
+                    <p class="service-description">
+                        Providing ongoing support and maintenance to keep 
+                        your digital assets running smoothly.
+                    </p>
+                    <ul class="service-features">
+                        <li>24/7 Technical Support</li>
+                        <li>Regular Updates</li>
+                        <li>Security Monitoring</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">
+                    Featured 
+                    <span class="gradient-text">Projects</span>
+                </h2>
+                <p class="section-subtitle">
+                    Explore our latest work and see how we've helped brands 
+                    achieve their digital ambitions.
+                </p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i data-lucide="monitor"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">E-Commerce Platform</h3>
+                                <p class="portfolio-description">Modern shopping experience with AI recommendations</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">AI/ML</span>
+                                </div>
+                                <button class="portfolio-btn">
+                                    <i data-lucide="external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Fitness Tracking App</h3>
+                                <p class="portfolio-description">Comprehensive health and fitness companion</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">React Native</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">HealthKit</span>
+                                </div>
+                                <button class="portfolio-btn">
+                                    <i data-lucide="external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">SaaS Dashboard</h3>
+                                <p class="portfolio-description">Analytics platform for enterprise clients</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Vue.js</span>
+                                    <span class="tag">D3.js</span>
+                                    <span class="tag">Python</span>
+                                </div>
+                                <button class="portfolio-btn">
+                                    <i data-lucide="external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Brand Identity</h3>
+                                <p class="portfolio-description">Complete rebrand for tech startup</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Branding</span>
+                                    <span class="tag">UI Design</span>
+                                    <span class="tag">Motion</span>
+                                </div>
+                                <button class="portfolio-btn">
+                                    <i data-lucide="external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Travel Platform</h3>
+                                <p class="portfolio-description">Immersive booking experience with VR previews</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Next.js</span>
+                                    <span class="tag">WebXR</span>
+                                    <span class="tag">Stripe</span>
+                                </div>
+                                <button class="portfolio-btn">
+                                    <i data-lucide="external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i data-lucide="music"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Music Streaming App</h3>
+                                <p class="portfolio-description">Social music discovery platform</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Flutter</span>
+                                    <span class="tag">GraphQL</span>
+                                    <span class="tag">AWS</span>
+                                </div>
+                                <button class="portfolio-btn">
+                                    <i data-lucide="external-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">
+                    Let's Create Something 
+                    <span class="gradient-text">Amazing Together</span>
+                </h2>
+                <p class="section-subtitle">
+                    Ready to transform your digital presence? Get in touch and 
+                    let's discuss how we can bring your vision to life.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>hello@nexusstudio.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p>123 Innovation Street<br>San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i data-lucide="twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i data-lucide="dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">NEXUS</span>
+                    <p>Digital Innovation Studio</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">UI/UX Design</a></li>
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">Mobile Apps</a></li>
+                            <li><a href="#services">Digital Strategy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEXUS Digital Innovation Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
